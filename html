@@ -6,65 +6,119 @@
     <meta name="author" content="Seu Nome">
     <title>Portfólio - Seu Nome</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
             color: #333;
         }
+
         header {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 50px 0;
             text-align: center;
+            font-size: 2em;
         }
+
         header h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
+            font-size: 3em;
             font-weight: bold;
         }
-        section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            max-width: 1000px;
-            background-color: white;
-            border-radius: 8px;
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
         }
+
+        section {
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+
         section h2 {
             text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
         }
+
+        .about, .projects, .contact {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about p, .contact p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
+
         .project {
-            background-color: #e4e4e4;
+            background-color: #ecf0f1;
             padding: 20px;
             border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
+
         .project img {
             width: 100%;
             height: auto;
             border-radius: 8px;
+            margin-bottom: 15px;
         }
+
+        .project h3 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact ul li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 1.1em;
+        }
+
+        /* Efeito de rolagem suave */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -72,48 +126,44 @@
 
 <header>
     <h1>Meu Portfólio</h1>
-    <p>Olá, sou [Seu Nome]. Este é o meu portfólio de projetos.</p>
+    <p>Sou [Seu Nome] - Desenvolvedor Web</p>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-</nav>
-
-<section id="sobre">
+<section id="sobre" class="about">
     <h2>Sobre Mim</h2>
-    <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Tenho experiência em HTML, CSS, JavaScript e outras tecnologias. Meu objetivo é sempre entregar projetos que atendam às necessidades do cliente e proporcionem uma experiência incrível ao usuário.</p>
+    <p>Sou um desenvolvedor apaixonado por construir experiências digitais interativas e funcionalmente eficientes. Com experiência em front-end e back-end, busco sempre aprender novas tecnologias e aprimorar minhas habilidades para criar soluções inovadoras.</p>
+    <p>Tenho experiência com HTML, CSS, JavaScript, React, Node.js e outras tecnologias modernas que me ajudam a entregar projetos de alta qualidade.</p>
 </section>
 
-<section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projects">
-        <div class="project">
-            <img src="https://via.placeholder.com/250" alt="Projeto 1">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1. Acesse o projeto <a href="#">aqui</a>.</p>
-        </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/250" alt="Projeto 2">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2. Acesse o projeto <a href="#">aqui</a>.</p>
-        </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/250" alt="Projeto 3">
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3. Acesse o projeto <a href="#">aqui</a>.</p>
-        </div>
+<section id="projetos" class="projects">
+    <h2>Meus Projetos</h2>
+    <div class="project">
+        <img src="https://via.placeholder.com/350" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto 1. Um aplicativo responsivo que resolve o problema X e ajuda a melhorar a experiência Y.</p>
+        <a href="#">Ver mais detalhes</a>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/350" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto 2. Uma plataforma para ajudar empresas a otimizar seus processos internos com integração de APIs e dados em tempo real.</p>
+        <a href="#">Ver mais detalhes</a>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/350" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>Descrição breve do projeto 3. Um sistema de e-commerce que melhora a conversão de vendas com funcionalidades de recomendação baseadas em IA.</p>
+        <a href="#">Ver mais detalhes</a>
     </div>
 </section>
 
-<section id="contato">
+<section id="contato" class="contact">
     <h2>Contato</h2>
-    <p>Se você gostaria de entrar em contato comigo, você pode me enviar um e-mail para <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a>.</p>
-    <p>Ou me seguir nas redes sociais:</p>
+    <p>Entre em contato comigo por e-mail ou nas redes sociais abaixo:</p>
     <ul>
-        <li><a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/seu-perfil" target="_blank">GitHub</a></li>
+        <li><strong>Email:</strong> <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/seu-perfil" target="_blank">github.com/seu-perfil</a></li>
     </ul>
 </section>
 
