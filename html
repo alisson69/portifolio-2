@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seu Nome">
+    <title>Portfólio - Seu Nome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        section h2 {
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background-color: #e4e4e4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Portfólio</h1>
+    <p>Olá, sou [Seu Nome]. Este é o meu portfólio de projetos.</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Tenho experiência em HTML, CSS, JavaScript e outras tecnologias. Meu objetivo é sempre entregar projetos que atendam às necessidades do cliente e proporcionem uma experiência incrível ao usuário.</p>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="https://via.placeholder.com/250" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1. Acesse o projeto <a href="#">aqui</a>.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/250" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2. Acesse o projeto <a href="#">aqui</a>.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/250" alt="Projeto 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3. Acesse o projeto <a href="#">aqui</a>.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Se você gostaria de entrar em contato comigo, você pode me enviar um e-mail para <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a>.</p>
+    <p>Ou me seguir nas redes sociais:</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/seu-perfil" target="_blank">GitHub</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
